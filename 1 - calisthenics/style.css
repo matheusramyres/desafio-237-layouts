@@ -1,0 +1,296 @@
+:root{
+    --color-theme: #32CB00;
+    --color-backbutton: #33cb0036;
+    --color-dark:#000000;
+    --color-light:#ffffff;
+    font-size: 100%;
+}
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    font-family: 'Patua One', sans-serif;
+    width: 100%;
+}
+
+
+h1, h2, h3, a, li{
+    text-transform: uppercase;
+}
+
+
+.button{
+    display: inline-block;
+    background: var(--color-backbutton);
+    text-decoration: none;
+    color:var(--color-light);
+    font-size: 1.6rem;
+
+    border: 0.1875rem solid var(--color-theme);
+    padding: 0.5rem 3rem;
+    margin-top: 2rem;
+}
+
+.button:hover{
+    background: #3be901;
+    color: #ffffff;
+}
+
+
+.description-info, .comment, .video-info, .page-end, footer{
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.menu{
+    height: 6rem;
+    background: var(--color-dark);
+    padding: 1rem 3rem;
+}
+
+.logo{
+    height: 4rem; 
+}
+
+.login{
+    float:right;
+    text-decoration: none;
+    text-align: center;
+    color: var(--color-theme);
+    font-size: 2rem;
+    padding: 0.8rem 0.8rem;
+}
+
+.login:hover{
+    background: #3be901;
+    color: #ffffff;
+    height: 100%;
+    
+}
+
+.header-content{
+    height: 50rem;
+
+    background: url('./header-top.png');
+    background-position: top center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding:0 0 0 4rem;
+    color: #ffffff;
+}
+
+h3{
+    font-size: 2rem;
+}
+
+.header-content h1{
+    font-size: 6rem;
+    letter-spacing: 0.2rem;
+}
+
+.header-content h1, .span{
+    color: var(--color-theme);
+}
+
+.header-content ul{
+    list-style: none;
+    font-size: 1.6rem;
+}
+
+
+
+.mark{
+    display: inline-block;
+    background: #ffffff;
+    height: 1.5rem;
+    width: 1.5rem;
+
+    border-radius: 2rem;
+}
+
+.mark div{
+    height: 1.5rem;
+    width: 1.5rem;
+    background: url('./ok.svg');
+    background-position: center;
+    background-size: contain;
+    background-repeat: no-repeat;
+}
+
+main p{
+    margin-top: 2rem;
+    font-size: 1.2rem;
+}
+
+.description{
+    height: 25rem;
+    background: var(--color-theme); 
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    
+}
+
+.description .button{
+    border-color: #ffffff;
+}
+
+.description-info{
+    height: 80%;
+    width: 80%;
+    color: #ffffff;
+}
+
+section article div{
+    width: 50%;
+    height: 30rem;
+}
+
+.info-1, .info-2 {
+    display: flex;
+}
+
+.workout-img-1{
+    background: url('./handstando.png');
+    background-position: center;
+    background-size: cover;
+}
+
+.workout-img-2{
+    background: url('./L-sit.png');
+    background-position: center;
+    background-size: cover;
+}
+
+.content-info{
+    padding: 2rem 5rem;
+}
+
+.content-info a{
+    color: #000000;
+}
+
+
+.comment{
+    height: 25rem;
+    background: var(--color-theme);
+    padding:0 15rem;
+    color: #ffffff;
+    
+
+}
+
+.comment img{
+    height: 10rem;
+    border-radius: 60rem;
+}
+
+.video-info{
+    height: 38rem;
+    padding: 0 5rem;
+}
+
+.video-info iframe{
+    margin-top: 3rem;
+    width: 35rem;
+    height: 19.6875rem;
+}
+
+
+.page-end{
+    height: 25rem;
+    background: url('./image-final.png');
+    background-position: center;
+    background-size: cover;
+
+    text-align: center;
+    color: #ffffff;
+}
+
+
+footer{
+    height: 4rem;
+    background: #ffffff;
+    
+}
+
+@media(max-width: 960px){
+    :root{
+        font-size: 90%;
+    }
+
+    section article div{
+        width: 100%;
+    }
+    .info-1{
+        flex-direction: column;
+    }
+    .info-2{
+        flex-direction: column-reverse;
+    }
+
+    .comment{
+        padding:0 2rem;
+    }
+}
+
+@media(max-width: 760px){
+
+    .menu{
+        padding-left: 1rem;
+        padding-right: 1rem;
+    }
+
+    .logo{
+        height: 3rem;
+    }
+
+    .login{
+        font-size: 1.5rem;
+    }
+
+    .header-content{
+        padding-left: 1rem;
+    }
+
+    .header-content h1{
+        font-size: 4rem;
+    }
+
+    main p{
+        margin-top: 2rem;
+        font-size: 1rem;
+    }
+
+    .content-info{
+        padding:1rem 2.5rem;
+    }
+
+    .video-info{
+        padding: 0 2.5rem;
+    }
+    
+    .video-info iframe{
+        margin-top: 1.5rem;
+        width: 17.5rem;
+        height: 9.84375rem;
+    }
+}
+
+
+@media(max-width: 320px){
+    :root{
+        font-size: 50%;
+    }
+}
